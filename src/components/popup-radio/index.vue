@@ -69,6 +69,9 @@ export default {
           return option.key === this.currentValue
         })
         if (match) {
+          if (match.showValue) {
+              return match.showValue
+          }
           return match.value
         }
       }
